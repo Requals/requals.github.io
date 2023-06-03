@@ -68,6 +68,7 @@ class RouterController {
 					let htmlDoc = parser.parseFromString(text, "text/html");
 					document.body.innerHTML = htmlDoc.body.innerHTML;
 					document.head.innerHTML = htmlDoc.head.innerHTML;
+					console.log(document.scripts);
 				});
 		}
 
