@@ -69,7 +69,7 @@ class RouterController {
 					document.body.innerHTML = htmlDoc.body.innerHTML;
 					document.head.innerHTML = htmlDoc.head.innerHTML;
 					const scripts = document.querySelectorAll("script");
-					for(script of scripts){
+					for(let script of scripts){
 						const scriptElement = document.createElement("script");
 						if(script.src) {
 							fetch(script.src).then((response) => response.text()).then(scriptText => scriptElement.innerHTML = scriptText);
