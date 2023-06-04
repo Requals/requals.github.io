@@ -14,7 +14,7 @@ for(topic in topics){
 }
 
 
-if(document.readyState = "complete") {
+if(document.readyState === "complete") {
     setupSidebar();
 } else {
     document.addEventListener("DOMContentLoaded", () => {
