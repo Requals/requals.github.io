@@ -4,6 +4,7 @@ function setupSidebar(){
 }
 
 const topics = {
+    "Home": "https://requals.github.io",
     "About": "https://requals.github.io/about",
     "Projects": "https://requals.github.io/projects"
 };
