@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 :root {
-    --font-size: min(2.5vh,1rem);
+    --font-size: min(3vh,1rem + 0.5vh);
 }
 
 
@@ -20,6 +20,7 @@ body {
     display: grid;
     margin: 0px;
     height: 100%;
+    font-size: var(--font-size);
 }
 
 html {
@@ -120,10 +121,10 @@ aside a span {
     .header {
         grid-row: 1;
         grid-column: span 2;
-        font-size: calc(3*var(--font-size));
+        font-size: calc(2.5*var(--font-size));
     }
 
     aside a {
-        font-size: calc(1.5*var(--font-size));
+        font-size: calc(1.25*var(--font-size));
     }
 }
