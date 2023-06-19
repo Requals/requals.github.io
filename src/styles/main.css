@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 :root {
-    --font-size: min(3vh,1rem + 0.5vh);
+    --font-size: min(3vh, 1rem + 0.5vh);
 }
 
 
@@ -39,7 +39,8 @@ h1 {
     padding: 18px;
 }
 
-.sidebar,.header {
+.sidebar,
+.header {
     background-color: #0025316c;
     backdrop-filter: blur(3px);
 }
@@ -48,7 +49,7 @@ aside a {
     user-select: none;
     display: flex;
     align-items: center;
-    height: clamp(20px,50vh,37.5px);
+    height: clamp(20px, 50vh, 37.5px);
     background-color: #00253134;
     text-decoration: none;
 }
@@ -96,7 +97,7 @@ aside a span {
         align-items: center;
         font-size: calc(2.5*var(--font-size));
     }
-    
+
     aside a {
         font-size: calc(1.25*var(--font-size));
     }
@@ -104,7 +105,7 @@ aside a span {
 
 @media (min-aspect-ratio: 9/12) {
     body {
-        grid-template-rows: clamp(40px,10vh,75px);
+        grid-template-rows: clamp(40px, 10vh, 75px);
         grid-template-columns: max(120px, 12.5vw);
     }
 

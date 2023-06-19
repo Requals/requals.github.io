@@ -49,7 +49,7 @@ class RouterController {
 				document.body.innerHTML = `
 					<h1>Oops!</h1>
     				<samp class="message">Error: <samp class="error"></samp></samp>
-				`
+				`;
 				notifyError("404 Not Found");
 			}
 
@@ -69,10 +69,12 @@ class RouterController {
 					document.body.innerHTML = htmlDoc.body.innerHTML;
 					document.head.innerHTML = htmlDoc.head.innerHTML;
 					const scripts = document.querySelectorAll("script");
-					for(let script of scripts){
+					for (let script of scripts) {
 						const scriptElement = document.createElement("script");
-						if(script.src) {
-							fetch(script.src).then((response) => response.text()).then(scriptText => scriptElement.innerHTML = scriptText);
+						if (script.src) {
+							fetch(script.src)
+								.then((response) => response.text())
+								.then((scriptText) => (scriptElement.innerHTML = scriptText));
 						} else {
 							scriptElement.innerHTML = script.innerHTML;
 						}
