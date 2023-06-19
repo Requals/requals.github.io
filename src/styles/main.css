@@ -1,131 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 
 :root {
-    --font-size: min(3vh, 1rem + 0.5vh);
+	--font-size: min(3vh, 1rem + 0.5vh);
 }
 
-
 * {
-    font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    box-sizing: border-box;
+	font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+	color: white;
+	box-sizing: border-box;
 }
 
 body {
-    background: url("/src/images/bg.png");
-    background-color: #2d70b3;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    margin: 0px;
-    height: 100%;
-    font-size: var(--font-size);
+	background: url("/src/images/bg.png");
+	background-color: #2d70b3;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: grid;
+	margin: 0px;
+	height: 100%;
+	font-size: var(--font-size);
 }
 
 html {
-    height: 100%;
+	height: 100%;
 }
 
 h1 {
-    margin-top: 0px;
+	margin-top: 0px;
 }
 
 .header {
-    user-select: none;
+	user-select: none;
 }
 
 .main {
-    padding: 18px;
+	padding: 18px;
 }
 
 .sidebar,
 .header {
-    background-color: #0025316c;
-    backdrop-filter: blur(3px);
+	background-color: #0025316c;
+	backdrop-filter: blur(3px);
 }
 
 aside a {
-    user-select: none;
-    display: flex;
-    align-items: center;
-    height: clamp(20px, 50vh, 37.5px);
-    background-color: #00253134;
-    text-decoration: none;
+	user-select: none;
+	display: flex;
+	align-items: center;
+	height: clamp(20px, 50vh, 37.5px);
+	background-color: #00253134;
+	text-decoration: none;
 }
 
 aside a span {
-    transition: padding-left 0.25s cubic-bezier(0.25, 1, 0.5, 1);
-    padding-left: 5px;
+	transition: padding-left 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+	padding-left: 5px;
 }
 
 @media (hover: hover) and (min-aspect-ratio: 9/16) {
-    aside a:hover {
-        background-color: #002531a9;
-    }
+	aside a:hover {
+		background-color: #002531a9;
+	}
 
-    aside a:hover span {
-        padding-left: 15px;
-    }
+	aside a:hover span {
+		padding-left: 15px;
+	}
 }
 
 @media (max-aspect-ratio: 9/12) {
-    body {
-        grid-template-rows: 7.5% 5% 87.5%;
-    }
+	body {
+		grid-template-rows: 7.5% 5% 87.5%;
+	}
 
-    .main {
-        grid-row: 3;
-        grid-column: 1;
-    }
+	.main {
+		grid-row: 3;
+		grid-column: 1;
+	}
 
-    .sidebar {
-        grid-row: 2;
-        grid-column: 1;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
+	.sidebar {
+		grid-row: 2;
+		grid-column: 1;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
 
-    .header {
-        grid-row: 1;
-        grid-column: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: calc(2.5*var(--font-size));
-    }
+	.header {
+		grid-row: 1;
+		grid-column: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: calc(2.5 * var(--font-size));
+	}
 
-    aside a {
-        font-size: calc(1.25*var(--font-size));
-    }
+	aside a {
+		font-size: calc(1.25 * var(--font-size));
+	}
 }
 
 @media (min-aspect-ratio: 9/12) {
-    body {
-        grid-template-rows: clamp(40px, 10vh, 75px);
-        grid-template-columns: max(120px, 12.5vw);
-    }
+	body {
+		grid-template-rows: clamp(40px, 10vh, 75px);
+		grid-template-columns: max(120px, 12.5vw);
+	}
 
-    .main {
-        grid-row: 2;
-        grid-column: 2;
-    }
+	.main {
+		grid-row: 2;
+		grid-column: 2;
+	}
 
-    .sidebar {
-        grid-row: 2;
-        grid-column: 1;
-    }
+	.sidebar {
+		grid-row: 2;
+		grid-column: 1;
+	}
 
-    .header {
-        grid-row: 1;
-        grid-column: span 2;
-        font-size: calc(2.5*var(--font-size));
-    }
+	.header {
+		grid-row: 1;
+		grid-column: span 2;
+		font-size: calc(2.5 * var(--font-size));
+	}
 
-    aside a {
-        font-size: calc(1.25*var(--font-size));
-    }
+	aside a {
+		font-size: calc(1.25 * var(--font-size));
+	}
 }
